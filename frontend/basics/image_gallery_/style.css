@@ -1,0 +1,38 @@
+/*
+#one{
+    background-color: red;
+}
+
+#two{
+    background-color: purple;
+}
+
+
+div{
+    width: 100px;
+    float: if there's room for them on that line
+    it'll kind of hop up to the next one 
+    float: left;
+}*/
+h1{
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 6%;
+    border-bottom:solid 2px #115598;
+}
+img {
+    float: left;
+    width: 30%;
+    margin:1.66%;
+
+}
+
+/*
+img {
+    float: left;
+    width: 38%;
+    margin:6%;
+
+}*/
+
+
+

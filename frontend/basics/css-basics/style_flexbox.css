@@ -1,0 +1,61 @@
+.container{
+    /*Properties for the Parent(flex container)/
+    /*dispaly: defines a flex container;  inline or block depending on the given value
+      It enables a flex context for all its direct children. 
+      It means that i am telling my web browser hey this is a flexbox container 
+      Eğer display olmasaydı yan yana olmak yerine alt alata olucaklardı çünkü block level elements*/
+    display: flex;
+    
+    /* flex-direction: defines the direction flex items are placed.
+    Flex items as primarily laying out either in horizontal rows or vertical columns. 
+    row olursa ilk yazılan element en solda
+    row-reverse olursa ilk yazılan element en sağda olur */
+    flex-direction: row;
+    /*
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row-reverse;*/
+
+    /*Flex-wrap: flex items tek bir satıra sığmaya çalışır default (elemet boyutları değişebilir)
+     biz bunu değiştirebilir ve elemt boyutlarının değişimini engelleyebiliriz*/
+    flex-wrap: wrap; /*wrap | nowrap| wrapreverse*/
+
+    /*Flex-flow = flex-direction || flex-wrap*/
+    flex-flow: row wrap;
+
+    /*justify-content : how i want to distribute extra space (word hizalayıcı gibi bence)
+    space-around  ||flex-end || flex-start || space-between || space-evenly*/
+    justify-content:center; 
+
+    /*align-items : how items are laid out on the cross-axis, like a version of justify contenet for the cross axis
+      default strecht*/
+    align-items: baseline;
+    
+}
+
+.flex-item{
+    min-height: 200px;
+    min-width: 200px;
+    color: white;
+    font-size: 50px;
+}
+
+#flex-item-1{
+    background-color: red;
+    /*the default order is 0. Order of any element less than zero is showed up before red*/
+    order:1;
+    /* item boyutunun değiştiği durumlarda diğer itemlara kıyasla 
+    ne kadar büyüme oranına sahip olduğudur.default değeri 0'dır.*/
+    flex-grow: 1;
+}
+
+#flex-item-2{
+    background: green;
+    flex-grow: 2;
+
+}
+
+#flex-item-3{
+    background: blue;
+    flex-grow: 1;
+}

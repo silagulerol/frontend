@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+    <!--Action attribute: is where the form sends its request. It is a URL that's listening for this form to submit it-->
+    <!--Form validtaion: can be provide by input type and require-->
+
+    <form action="#" method="GET">
+        <!--
+        <input type="number">
+        <input type="date">
+        <input type="email">
+        <input type="button">
+    -->
+        <label for="username">Username:</label>
+        <input id="username" type="text" name="username" placeholder="username" required autofocus>
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input id="password" type="password" name="password" placeholder="password" required autofocus>
+        <br>
+        <br>
+        <p>Favourite drink:</p>
+        <label for="pepsi">Pepsi</label>
+        <input id="pepsi" type="radio" name="drink" value="pepsi">
+        <label for="coke">Coke</label>
+        <input id="coke" type="radio" name="drink" value="coke">
+        <br>
+        <br>
+
+        <!-- name is a key and value is value-->
+        <label for="month">Birth Month</label>
+        <select name="month" id="month">
+            <option value="jan">Jan</option>
+            <option value="feb">Feb</option>
+        </select>
+        <br>
+        <br>
+        <label for="info"></label>
+        <textarea name="info" id="info" cols="30" rows="10" placeholder="Tell us about yourself..." required></textarea>
+        <br>
+        <br>
+        <button>Submit</button>
+        <br>
+        <br>
+
+        
+    </form>
+
+    <form action="" method="GET">
+        <input type="text" placeholder="search" name="query">
+        <button>Search</button>
+    </form>
+
+</body>
+</html>

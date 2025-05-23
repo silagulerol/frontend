@@ -1,0 +1,75 @@
+/* STYLE
+h1{
+    background-color: rgb(255,0,0);
+    border: 5px solid green;
+    border-radius: 10px;
+}
+
+p{
+    background-color: rgb(0,0,255);
+    border: 7px solid rgb(200,10,80);
+}
+
+div{
+    background-color: rgb(0,2555,255);
+}
+
+body{
+    background: url(https://i.pinimg.com/474x/26/6b/bd/266bbd5746e8c99de4b425c7edef1c16.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+/* SELECTORS */
+/* ELEMENT: select all same tags*/
+h1{
+    color:red;
+}
+
+h3 {
+    color:purple;
+}
+
+
+/* CLASS: selcets elements in the same class */
+.yellow_bg{
+    background-color: yellow;
+}
+
+.cool_ul{
+    color:red;
+}
+
+/* ID : Selects only one, bcs it is unique*/
+#header1 {
+    color: blue;
+}
+
+#my_id{
+    color:green;
+}
+
+/* Asterisk */
+* {
+   /* border: 1px solid red;*/
+}
+
+/* Descendants: Elements which are inside in an other element, all anchor tags (a) inside li */
+li a{
+    background:orange;
+}
+
+/* Adjacent:it selects all elements that come after another element that's a sibling of it */
+h3 + ul{
+    border:solid red;
+}
+
+/* N-th of Tpe*/
+li:nth-of-type(2){
+    background:lightblue;
+}
+
+/* Attribute: all items (i.e a tag) of some type with same attribute (href attriibute)*/
+a[href="https://www.amazon.com"]{
+    background:green;
+}

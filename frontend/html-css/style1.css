@@ -1,0 +1,226 @@
+/*
+body{  #selector
+height: 100%; #declaration
+width: 100;
+}
+*/
+
+/* SELECTORS and DECLARATIONS
+body{
+     background-color: green;   
+}
+
+
+h1{
+    background-color: green;
+}
+
+#welcome{
+    background-color: yellow;
+}
+
+.heading{
+    color: blue;
+}
+
+h1.heading{
+    color: purple;
+}
+
+*{
+    color: brown;
+}
+ 
+h1, p{
+    color:green;
+}
+*/
+
+/* Background resim ekleme ve pozisyonu
+body{
+    background-image: url("https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/ecaeb2cc-a950-4645-a648-9137305b3287/Derivates/df977b90-193d-49d4-a59d-8dd922bcbf65.jpg");
+    background-position:right top;
+}
+
+h1,p{
+    color: white;
+}
+*/
+
+ /* Margins
+ body{
+    
+}
+
+b{
+    margin-top: 60px;
+}
+ 
+ 
+p{
+    margin-top: 60px;
+    margin-left: 50%; 
+    margin: 50px 50px 50px 50px;
+
+    margin-top: inherit;
+}
+*/ 
+
+
+/* CSS STYLES
+h1{
+    border-style: none;
+    border-style: dotted;
+    border-style: solid;
+    border-style: groove;
+    border-style: dashed;
+    border-style: ridge;
+    border-style: outset;
+    border-style: inset;
+    border-style: hidden;
+    border-style: dashed double dotted solid;
+    border-style: solid;
+
+    border-width: 10px 5px 11ppx 22px;
+
+    border-color: purple blue green red;
+    
+    border-bottom: dashed;
+    border-left: 10px dashed purple;
+
+    border: 3px solid purple;
+    border-radius: 20px;
+
+    padding-top: 40px 10px;
+
+    height: 90px;
+    width: 100%;
+    max-width: 50%;
+    background-color: purple;
+    
+    border: 2px dashed green;
+    outline-style: dashed;
+    outline-offset: 10px;
+
+    color: blue;
+    background-color: red;
+
+    text-align: right;
+    text-align: center; 
+    text-align: justify;
+    text-align-last: center;
+
+    vertical-align: center;
+
+    text-decoration-line: line-through underline;
+    text-decoration-color: green;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 90px;
+    text-decoration: overline purple solid 90px;
+    text-decoration: none;
+    text-transform: lowercase;
+    text-transform: uppercase;
+    text-indent: 30px;
+    letter-spacing: 30px;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-style: oblique;
+    font-style: normal;
+
+    font-weight: bold;
+    font-weight: normal;
+
+    font-size: 50px;
+    font-size: 4em;
+}
+*/
+
+table, th, td{
+    display: none;
+    /* visibility: hidden;  --> It is different then above*/
+
+    border: 2px solid;
+    width: 50%;
+    border-collapse: collapse;
+}
+ 
+th{
+    height: 50px;
+    text-align: center;
+
+}
+
+td{
+    text-align: center;
+}
+
+th, td{
+    padding: 10px;
+}
+
+tr:hover{
+    background-color: blue;
+}
+
+h1 b{/* all the b elemets as the child of the h1 */
+   color: red; 
+}
+
+h1 > b{ /* all the b elemets as the DIRECTLY child of the h1 */
+    color: blue; 
+ }
+
+ h1 + b{/* the b elemet as adjacent sibling of the  h1 */
+    color: red;
+ }
+
+h1 ~ b{/* the b elemet as siblings of the  h1 */
+    color: green;
+}
+
+.dropdownbutton{
+    background-color: blue;
+    color: white;
+    padding: 13px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: lightblue;
+    min-width: 150px;
+}
+
+.dropdown-menu a{
+    color: black;
+    padding: 11px 15px;
+    text-decoration:  none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown:hover .dropdownbutton{
+    background-color: grey;
+} 
+
+div[class]{ /*div[class = "test"]*/
+    color:red;
+}
+
